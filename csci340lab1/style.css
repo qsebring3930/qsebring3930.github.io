@@ -39,13 +39,15 @@ a {
   height: 22px !important;
 }
 
+text-image {
+  height: auto;
+  width: auto;
+  display: inline-block;
+  padding: 10px;
+}
+
 #title-image {
   float: left;
   width: 50px;
   height: 50px;
-}
-
-#text-image {
-  display: inline-block;
-  padding: 10px;
 }
