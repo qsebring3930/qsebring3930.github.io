@@ -1,27 +1,21 @@
 .title {
   display: inline;
   height: 50px;
-  width: inherit;
-  /*https://stackoverflow.com/questions/9067892/how-to-align-two-elements-on-the-same-line-without-changing-html*/
+  padding: 10px;
 }
 
 .navbar {
   display: inline;
+  padding: 10px;
 }
 
 .main {
   display: inline;
 }
 
-.container {
-  margin-left: 25px;
-  margin-right: 25px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
 
 h1 {
-  color: #7888eb;
+  color: #7844eb;
   background-color: #9290f8;
   font-family: 'Sacramento', cursive;
 }
@@ -33,8 +27,7 @@ ul {
 
 li {
   white-space: nowrap;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: inherit;
   flex: .25;
 }
 
