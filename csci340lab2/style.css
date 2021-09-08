@@ -14,14 +14,16 @@
 .headerbutton {
   background-color: black;
   color: gold;
-  height: 35px;
-  width: 100px;
+  height: 25px;
+  width: 125px;
+  white-space: nowrap;
   margin-left: 15px;
   margin-right: 15px;
-  margin-top: 20px;
+  margin-top: 22.5px;
 }
 
 .body {
+  display: inline-block;
   background-color: black;
   height: 100%;
   width: 100%;
@@ -37,4 +39,19 @@
 #headerimage {
   padding-left: 10px;
   padding-top: 10px;
+}
+
+#introductiontitle {
+  padding-left: 25px;
+  color: yellow;
+}
+
+#introductiontext {
+  padding-left: 25px;
+  color: yellow;
+}
+
+#giventext {
+  padding-left: 25px;
+  color: yellow;
 }
