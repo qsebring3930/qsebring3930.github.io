@@ -1,3 +1,13 @@
-h1 {
+.header {
+  height: 50px;
+  width: 100%;
+  display: block;
+  background-color: yellow;
+}
 
+#headertext {
+  font-size: 32px;
+  position: absolute;
+  left: 10;
+  bottom: 5;
 }
