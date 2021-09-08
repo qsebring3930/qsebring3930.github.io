@@ -5,9 +5,22 @@
   background-color: yellow;
 }
 
+.headerstrip {
+  height: 5px;
+  width: 100%;
+  background-color: gold;
+}
+
+.headerbutton {
+  position: ;
+  background-color: black;
+  color: gold;
+  padding-left:
+
+}
+
 #headertext {
-  font-size: 32px;
+  font-size: 42px;
   position: absolute;
-  left: 10;
-  bottom: 5;
+  padding-left: 10px;
 }

@@ -1,9 +1,27 @@
 <!DOCTYPE html>
   <html lang="en">
     <head>
+      <link rel="stylesheet" href="csci340lab2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="style.css">
       <title>WikiPrompt</title>
     </head>
     <body>
-      <h1>WikiPrompt<h1>
+      <div class="container">
+        <div class="header">
+          <img id="headerimage" src="https://live.staticflickr.com/715/22433772542_742691b25e_b.jpg" alt="Megachile rubi, M, Back, NC, Moore County_2014-01-07-18.55.27 ZS PMax">
+          <a id="headertext">WikiPrompt<a>
+          <button class="headerbutton">Home</button>
+          <button class="headerbutton">Shared Prompts</button>
+          <button class="headerbutton">About</button>
+        </div>
+        <div class="headerstrip">
+        </div>
+      </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="csci340lab2/js/bootstrap.min.js"></script>
+    <script>
+      $("img#headerimage").height(50);
+      $("img#headerimage").width(50);
+    </script>
     </body>
   </html>
