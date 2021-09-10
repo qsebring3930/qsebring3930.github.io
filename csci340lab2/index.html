@@ -47,10 +47,10 @@
             success: function(data) {
               console.log(data);
               var propnamelist = Object.keys(data.query.pages);
-              var pageid = propnamelist[0];
+              var String pageid = propnamelist[0];
               console.log(pageid);
-              var extract = Object.keys(data.query.pages[pageid].extract);
-              console.log(extract);
+              var extract = Object.keys(data.query.pages[pageid]);
+              console.log(extract["extract"]);
             },
             error: function(xhr,status,error) {
               console.log(error);
