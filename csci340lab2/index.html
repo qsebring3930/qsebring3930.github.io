@@ -49,7 +49,7 @@
               var propnamelist = Object.keys(data.query.pages);
               var pageid = propnamelist[0];
               console.log(pageid);
-              var extract = Object.keys(data.query.pages[pageid]);
+              var extract = data.query.pages[pageid].extract;
               console.log(extract);
             },
             error: function(xhr,status,error) {
