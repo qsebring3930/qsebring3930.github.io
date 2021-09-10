@@ -46,7 +46,8 @@
             url: "https://en.wikipedia.org/w/api.php?format=json&action=query&generator=random&grnnamespace=0&prop=extracts&exintro&explaintext&origin=*",
             success: function(data) {
               console.log(data);
-              $('#giventext').text(JSON.stringify(data));
+              const obj = JSON.parse(data);
+              console.log(obj.extract);
             },
             error: function(xhr,status,error) {
               console.log(error);
