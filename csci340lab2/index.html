@@ -61,19 +61,9 @@
       });
       $(document).ready(function() {
         $('#newimagebutton').click(function() {
-          $.ajax({
-            dataType: "json",
-            url: "https://picsum.photos/",
-            success: function(data) {
-              $("#giventext").attr("src", data);
-            },
-            error: function(xhr,status,error) {
-              console.log(error);
-            }
-          });
+            $("#giventext").attr("src", https://picsum.photos/100.jpg);
         });
       });
-      $("newimagebutton").click();
       $("newpromptbutton").click();
     </script>
     <script src="csci340lab2/js/bootstrap.min.js"></script>
