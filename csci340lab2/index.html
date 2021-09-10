@@ -59,6 +59,20 @@
           });
         });
       });
+      $(document).ready(function() {
+        $('#newimagebutton').click(function() {
+          $.ajax({
+            dataType: "json",
+            url: "https://picsum.photos/",
+            success: function(data) {
+              $("#giventext").attr("src", data);
+            },
+            error: function(xhr,status,error) {
+              console.log(error);
+            }
+          });
+        });
+      });
       $("newimagebutton").click();
       $("newpromptbutton").click();
     </script>
