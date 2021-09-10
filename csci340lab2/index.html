@@ -44,8 +44,10 @@
           $.ajax({
             dataType: "json",
             url: "https://en.wikipedia.org/w/api.php?format=json&action=query&generator=random&grnnamespace=0&prop=extracts&exintro&explaintext&origin=*",
-            success: function(results) {
-              console.log(results);
+            success: function(data) {
+              console.log(data);
+              var extract = data.getJSONObject(4);
+              console.log(extract);
               $('#giventext').attr("src", JSON.stringify(results));
             },
             error: function(xhr,status,error) {
