@@ -41,6 +41,27 @@
     <script>
       $("img#headerimage").height(50);
       $("img#headerimage").width(50);
+      $(document).ready(function() {
+        $('#newtextbutton').click(function() {
+          $.ajax({
+            dataType: "json",
+            url: "http://en.wikipedia.org/w/api.php?format=json&action=query&generator=random&grnnamespace=0&prop=revisions&rvprop=content&rvsection=0.",
+            success: function(results) {
+              console.log(results["url"]);
+              if (results["url"].endsWith(".mp4")) {
+                $('#giventext').attr("src", "error");
+              } else {
+                $('#giventext').attr("src", results["url"]);
+              }
+            },
+            error: function(xhr,status,error) {
+              console.log(error);
+            }
+          });
+        });
+      });
+      $("newimagebutton").click();
+      $("newpromptbutton").click();
     </script>
 
     </body>
