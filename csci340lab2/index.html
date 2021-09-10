@@ -47,7 +47,7 @@
             success: function(data) {
               console.log(data);
               var propnamelist = Object.keys(data.query.pages);
-              var String pageid = propnamelist[0];
+              var pageid = propnamelist[0];
               console.log(pageid);
               var extract = Object.keys(data.query.pages[pageid]);
               console.log(extract["extract"]);
