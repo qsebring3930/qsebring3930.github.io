@@ -51,6 +51,7 @@
               console.log(pageid);
               var extract = data.query.pages[pageid].extract;
               console.log(extract);
+              $("#giventext").text(extract);
             },
             error: function(xhr,status,error) {
               console.log(error);
