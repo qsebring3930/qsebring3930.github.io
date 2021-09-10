@@ -42,7 +42,7 @@
       $(document).ready(function() {
         $('#newtextbutton').click(function() {
           $.ajax({
-            dataType: "jsonp",
+            dataType: "json",
             url: "https://en.wikipedia.org/w/api.php?format=json&action=query&generator=random&grnnamespace=0&prop=extracts&exintro&explaintext",
             success: function(results) {
               console.log(results["url"]);
