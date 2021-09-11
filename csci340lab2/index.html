@@ -21,7 +21,7 @@
         <div class="body">
           <div class="introduction">
             <h1 id="introductiontitle">Welcome Writers!</h1>
-            <p id="introductiontext">Press the "New Prompt" button to receive a random image and a random excerpt from a Wikipedia page, then write!</p>
+            <p id="introductiontext">Press the "New Prompt" button to receive a random image and a random excerpt from a Wikipedia page. If at any point you want to swap either the image or excerpt use the "New Image" and "New Excerpt" buttons. Then write!</p>
           </div>
           <div class="image">
             <img id="givenimage" src="blank.jpg" alt="Randomized image">
@@ -62,7 +62,25 @@
           $("#givenimage").attr("src", "https://picsum.photos/seed/" + random.toString() + "picsum/200");
         });
       });
-      $("newpromptbutton").click();
+      $(document).ready(function() {
+        $('#newpromptbutton').click(function() {
+          $.ajax({
+            dataType: "json",
+            url: "https://en.wikipedia.org/w/api.php?format=json&action=query&generator=random&grnnamespace=0&prop=extracts&exintro&explaintext&origin=*",
+            success: function(data) {
+              var propnamelist = Object.keys(data.query.pages);
+              var pageid = propnamelist[0];
+              var extract = data.query.pages[pageid].extract;
+              $("#giventext").text(extract);
+              var random = Math.floor(Math.random() * 10000);
+              $("#givenimage").attr("src", "https://picsum.photos/seed/" + random.toString() + "picsum/200");
+            },
+            error: function(xhr,status,error) {
+              console.log(error);
+            }
+          });
+        });
+      });
     </script>
     <script src="csci340lab2/js/bootstrap.min.js"></script>
     </body>
