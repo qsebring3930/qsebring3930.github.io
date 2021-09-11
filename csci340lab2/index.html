@@ -62,8 +62,9 @@
       $(document).ready(function() {
         $('#newimagebutton').click(function() {
           console.log("clicked");
-          $("#givenimage").attr("src", "blank.jpg");
-          $("#givenimage").attr("src", "https://picsum.photos/100.jpg?random=100");
+          var random = Math.floor(Math.random() * 10000);
+          console.log(random);
+          $("#givenimage").attr("src", "https://picsum.photos/seed/" + random.toString() + "picsum/100");
         });
       });
       $("newpromptbutton").click();
