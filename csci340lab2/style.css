@@ -12,6 +12,7 @@
 }
 
 .headerbutton {
+  font-family: 'Urbanist', sans-serif;
   background-color: black;
   color: gold;
   height: 25px;
@@ -39,6 +40,7 @@
 }
 
 #headertext {
+  font-family: 'Urbanist', sans-serif;
   font-size: 42px;
   padding-left: 15px;
   padding-right: 15px;
@@ -51,16 +53,19 @@
 }
 
 #introductiontitle {
+  font-family: 'Urbanist', sans-serif;
   padding-left: 25px;
   color: yellow;
 }
 
 #introductiontext {
+  font-family: 'Urbanist', sans-serif;
   padding-left: 25px;
   color: yellow;
 }
 
 #giventext {
+  font-family: 'Urbanist', sans-serif;
   padding-left: 25px;
   color: yellow;
 }
@@ -71,6 +76,7 @@
 }
 
 #newimagebutton {
+  font-family: 'Urbanist', sans-serif;
   height: 30px;
   background-color: gold;
   margin-top: 85px;
@@ -79,6 +85,7 @@
 }
 
 #newtextbutton {
+  font-family: 'Urbanist', sans-serif;
   height: 30px;
   background-color: gold;
   margin-left: 25px;
@@ -87,9 +94,16 @@
 }
 
 #newpromptbutton {
+  font-family: 'Urbanist', sans-serif;
   height: 30px;
   background-color: gold;
   margin-left: 25px;
   margin-top: 25px;
   white-space: nowrap;
+}
+
+#nametagtext {
+  font-family: 'Urbanist', sans-serif;
+  padding-left: 25px;
+  color: yellow;
 }
