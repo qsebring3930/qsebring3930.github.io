@@ -45,12 +45,9 @@
             dataType: "json",
             url: "https://en.wikipedia.org/w/api.php?format=json&action=query&generator=random&grnnamespace=0&prop=extracts&exintro&explaintext&origin=*",
             success: function(data) {
-              console.log(data);
               var propnamelist = Object.keys(data.query.pages);
               var pageid = propnamelist[0];
-              console.log(pageid);
               var extract = data.query.pages[pageid].extract;
-              console.log(extract);
               $("#giventext").text(extract);
             },
             error: function(xhr,status,error) {
@@ -61,9 +58,7 @@
       });
       $(document).ready(function() {
         $('#newimagebutton').click(function() {
-          console.log("clicked");
           var random = Math.floor(Math.random() * 10000);
-          console.log(random);
           $("#givenimage").attr("src", "https://picsum.photos/seed/" + random.toString() + "picsum/100");
         });
       });
